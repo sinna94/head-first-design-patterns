@@ -1,9 +1,15 @@
-package ch1
+package ch1.duck
 
-class MallardDuck(
-    override var flyBehavior: FlyBehavior = FlyWithWings(),
-    override var quackBehavior: QuackBehavior = Quack()
-) : Duck() {
+import ch1.flybehavior.FlyWithWings
+import ch1.quackbehavior.Quack
+
+class MallardDuck : Duck() {
+
+    init {
+        flyBehavior = FlyWithWings()
+        quackBehavior = Quack()
+    }
+
     override fun display() {
         println("청둥오리")
     }

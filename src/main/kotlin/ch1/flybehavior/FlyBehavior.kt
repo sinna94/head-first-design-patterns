@@ -1,4 +1,4 @@
-package ch1
+package ch1.flybehavior
 
 interface FlyBehavior {
     fun fly()

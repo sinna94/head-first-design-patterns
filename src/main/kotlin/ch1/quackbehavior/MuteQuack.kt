@@ -1,4 +1,4 @@
-package ch1
+package ch1.quackbehavior
 
 class MuteQuack: QuackBehavior {
     override fun quack() {

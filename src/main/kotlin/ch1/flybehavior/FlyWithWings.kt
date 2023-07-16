@@ -1,4 +1,4 @@
-package ch1
+package ch1.flybehavior
 
 class FlyWithWings: FlyBehavior {
     override fun fly() {

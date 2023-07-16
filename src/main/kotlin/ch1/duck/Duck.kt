@@ -1,8 +1,11 @@
-package ch1
+package ch1.duck
+
+import ch1.flybehavior.FlyBehavior
+import ch1.quackbehavior.QuackBehavior
 
 abstract class Duck {
-    open lateinit var quackBehavior: QuackBehavior
-    open lateinit var flyBehavior: FlyBehavior
+    protected lateinit var quackBehavior: QuackBehavior
+    lateinit var flyBehavior: FlyBehavior
 
     abstract fun display()
 

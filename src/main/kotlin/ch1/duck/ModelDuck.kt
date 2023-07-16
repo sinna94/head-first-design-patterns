@@ -1,4 +1,15 @@
-package ch1
+package ch1.duck
 
-class ModelDuck {
+import ch1.flybehavior.FlyNoWay
+import ch1.quackbehavior.Quack
+
+class ModelDuck: Duck() {
+    init {
+        flyBehavior = FlyNoWay()
+        quackBehavior = Quack()
+    }
+
+    override fun display() {
+        println("모형 오리")
+    }
 }

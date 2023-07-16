@@ -1,4 +1,4 @@
-package ch1
+package ch1.quackbehavior
 
 class Squeak: QuackBehavior {
     override fun quack() {
